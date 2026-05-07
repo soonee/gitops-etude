@@ -42,7 +42,6 @@
 - `refs-and-index.md`
 - `git-identity.md`
 - `change-propagation.md`
-- `branch-strategy.md`
 - `automation.md`
 - `gitops-bridge.md`
 - `case-study/`
