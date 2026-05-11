@@ -22,7 +22,7 @@
 - [ROADMAP.md](./ROADMAP.md)
   전체 문서 구조, 읽는 순서, 앞으로 확장할 주제
 - [worktree](./worktree/README.md)
-  `git worktree`를 활용한 작업 컨텍스트 분리, 생명주기, worktree별 설정, multi-remote 운영 사례
+  `git worktree`를 활용한 작업 컨텍스트 분리, 생명주기, worktree별 설정, multi-remote 운영 사례, Codex 병렬 작업 격리
 - [branch](./branch/README.md)
   feature branch, rebase, squash, merge commit, 배포 branch 운영 기준
 - [history](./history/README.md)
@@ -39,10 +39,9 @@
 
 ## 다음에 추가할 주제
 
-- `refs-and-index.md`
-- `git-identity.md`
-- `change-propagation.md`
-- `branch-strategy.md`
-- `automation.md`
-- `gitops-bridge.md`
+- `refs-and-index/`
+- `remote/`
+- `identity/`
+- `automation/`
+- `gitops-bridge/`
 - `case-study/`

@@ -14,6 +14,8 @@
   worktree별 Git 설정과 `Git identity`, 기본 push 대상 remote 분리
 - [multi-remote-case.md](./multi-remote-case.md)
   여러 remote와 여러 identity를 worktree로 운영한 실제 사례
+- [codex-parallel-work.md](./codex-parallel-work.md)
+  `codex fork`로 같은 프로젝트를 병렬 작업할 때 worktree로 작업공간을 격리하는 방법
 
 ## 이 주제가 GitOps와 연결되는 이유
 
