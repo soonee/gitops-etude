@@ -63,6 +63,7 @@ worktree는 하나의 저장소를 여러 작업 공간으로 여는 운영 도�
 - branch가 있는데 왜 worktree가 필요한가
 - 여러 작업 컨텍스트를 동시에 유지하면 무엇이 달라지는가
 - worktree별 Git identity와 push remote를 어떻게 분리할 것인가
+- `codex fork` 같은 병렬 에이전트 작업에서 작업공간을 어떻게 격리할 것인가
 - multi-remote 운영 사례와 어떻게 연결되는가
 
 현재 문서:
@@ -72,6 +73,7 @@ worktree는 하나의 저장소를 여러 작업 공간으로 여는 운영 도�
 - [worktree/lifecycle.md](./worktree/lifecycle.md)
 - [worktree/config.md](./worktree/config.md)
 - [worktree/multi-remote-case.md](./worktree/multi-remote-case.md)
+- [worktree/codex-parallel-work.md](./worktree/codex-parallel-work.md)
 
 ### `history`
 
