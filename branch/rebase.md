@@ -22,6 +22,20 @@ A---B---C main
 
 여기서 `D'`, `E'`는 기존 `D`, `E`와 내용은 비슷하지만 새로 만들어진 commit이다. parent가 바뀌었기 때문에 commit hash도 바뀐다.
 
+## Rebase는 범위 선택이 먼저다
+
+`git rebase main`은 "현재 branch를 main 위로 옮긴다"라고만 이해하면 위험하다. 더 정확히는 "main에 없는 현재 branch의 commit 범위를 main 위에 다시 만든다"에 가깝다.
+
+따라서 rebase 전에 아래 명령으로 Git이 replay할 commit 범위를 먼저 확인하는 습관이 필요하다.
+
+```bash
+git log --oneline main..HEAD
+```
+
+여기에 이미 통합됐다고 생각한 commit이 보인다면, 단순 rebase가 아니라 기준점을 다시 잡아야 한다. 이때는 `git rebase --onto <new-base> <upstream-boundary> <branch>`처럼 replay 범위를 직접 지정하는 전략이 필요할 수 있다.
+
+이 내용은 [rebase-boundary.md](./rebase-boundary.md)에서 별도로 다룬다.
+
 ## Feature Branch에서 Rebase가 좋은 이유
 
 rebase가 유리한 이유는 아래와 같다.

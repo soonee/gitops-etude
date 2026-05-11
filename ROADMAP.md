@@ -43,6 +43,7 @@ branch는 변경 흐름을 나누는 전략 단위다.
 
 - feature branch는 main에 어떻게 반영할 것인가
 - rebase, squash, merge commit은 언제 선택할 것인가
+- rebase가 다시 만들 commit 범위와 기준점을 어떻게 잡을 것인가
 - main과 배포 branch는 왜 rewrite하면 안 되는가
 - GitOps 관점에서 배포 branch는 어떤 의미를 가지는가
 
@@ -51,6 +52,7 @@ branch는 변경 흐름을 나누는 전략 단위다.
 - [branch/README.md](./branch/README.md)
 - [branch/strategy.md](./branch/strategy.md)
 - [branch/rebase.md](./branch/rebase.md)
+- [branch/rebase-boundary.md](./branch/rebase-boundary.md)
 - [branch/integration.md](./branch/integration.md)
 - [branch/release-branches.md](./branch/release-branches.md)
 

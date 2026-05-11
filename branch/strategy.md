@@ -15,6 +15,7 @@ feature branch는 main에 병합하기 전에 최신 main 위로 rebase하는 �
 - feature branch에서는 rebase로 히스토리를 정리한다
 - main 또는 배포 branch는 rewrite하지 않는다
 - main에 들어가는 commit은 의미 있는 단위로 정리한다
+- rebase 전에 replay될 commit 범위를 확인한다
 - 이미 공유된 branch를 force push해야 한다면 `--force-with-lease`를 사용한다
 
 ## Feature Branch
@@ -27,6 +28,7 @@ feature branch에서는 아래 작업이 자연스럽다.
 - `rebase -i`로 noisy commit 정리
 - squash로 하나의 의미 있는 commit 만들기
 - 의미 있는 commit 여러 개를 유지하기
+- `git log <target>..HEAD`로 rebase 범위 확인하기
 
 즉, feature branch는 main에 들어갈 히스토리를 준비하는 공간이다.
 
@@ -63,6 +65,7 @@ main에서는 히스토리 안정성이 중요하다. 이미 공유된 main을 r
 - feature branch는 main 병합 전 최신 main 위로 rebase한다
 - main과 배포 branch는 rebase하지 않는다
 - feature branch 안의 noisy commit은 `rebase -i`로 정리한다
+- rebase 전에 `git log <target>..HEAD`로 replay 범위를 확인한다
 - 의미 있는 commit 여러 개가 있다면 squash하지 않고 유지할 수 있다
 - 의미 있는 단위가 하나라면 squash merge가 더 읽기 좋을 수 있다
 - 배포 branch에서는 추적 가능성과 rollback 가능성을 우선한다
